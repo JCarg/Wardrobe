@@ -12,7 +12,7 @@ namespace Wardrobe.Controllers
 {
     public class OutfitsController : Controller
     {
-        private WardrobeEntities db = new WardrobeEntities();
+        private WardrobeEntities1 db = new WardrobeEntities1();
 
         // GET: Outfits
         public ActionResult Index()
@@ -51,7 +51,7 @@ namespace Wardrobe.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "OutfitID,TopID,BottomID,ShoeID,AccessoryID")] Outfit outfit)
+        public ActionResult Create([Bind(Include = "OutfitID,OutfitName,TopID,BottomID,ShoeID,AccessoryID")] Outfit outfit)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace Wardrobe.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "OutfitID,TopID,BottomID,ShoeID,AccessoryID")] Outfit outfit)
+        public ActionResult Edit([Bind(Include = "OutfitID,OutfitName,TopID,BottomID,ShoeID,AccessoryID")] Outfit outfit)
         {
             if (ModelState.IsValid)
             {

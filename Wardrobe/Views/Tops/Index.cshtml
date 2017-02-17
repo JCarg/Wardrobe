@@ -9,7 +9,31 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>@Html.DisplayFor(modelItem => item.TopName)</h3>
+                    <div class="row">
+                        <div class="container-fluid">
+                            <img src="@Html.DisplayFor(modelItem=>item.TopPhoto)" style="width:100%; height:300px;" />
+                        </div>
+                    </div>
+                    @*<p>@Html.DisplayFor(modelItem => item.Summary)</p>
+                    <h5>
+                        @Html.DisplayFor(modelItem => item.Category.Name)
+                    </h5>*@
+                    @*@Html.ActionLink("Read More", "Details", new { id = item.ID }, new { @class = "btn btn-primary", role = "button" })*@
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.TopName)
@@ -38,7 +62,7 @@
             @Html.DisplayFor(modelItem => item.TopName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.TopPhoto)
+            <img src="@Html.DisplayFor(modelItem => item.TopPhoto)" />
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.TopType)
@@ -60,4 +84,4 @@
     </tr>
 }
 
-</table>
+</table>*@

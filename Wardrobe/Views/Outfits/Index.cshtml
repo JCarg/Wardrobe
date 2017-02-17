@@ -9,32 +9,11 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-@foreach (var item in Model)
-{
-    <div class="row">
-       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                @{string test = @Html.DisplayFor(modelItem => item.Top.TopPhoto).ToString();
-                <img class="visible-md-block img-fluid" src="@Html.DisplayFor(modelItem=>item.Top.TopPhoto)" alt=":)">
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            </div>
-        </div>
-        </div>
-}
-
-
-
-@*<table class="table">
+<table class="table">
     <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OutfitName)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.Accessory.AccessoryName)
         </th>
@@ -52,6 +31,9 @@
 
 @foreach (var item in Model) {
     <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OutfitName)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Accessory.AccessoryName)
         </td>
@@ -72,4 +54,4 @@
     </tr>
 }
 
-</table>*@
+</table>

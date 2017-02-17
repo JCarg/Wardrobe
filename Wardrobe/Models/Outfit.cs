@@ -15,6 +15,7 @@ namespace Wardrobe.Models
     public partial class Outfit
     {
         public int OutfitID { get; set; }
+        public string OutfitName { get; set; }
         public int TopID { get; set; }
         public int BottomID { get; set; }
         public int ShoeID { get; set; }

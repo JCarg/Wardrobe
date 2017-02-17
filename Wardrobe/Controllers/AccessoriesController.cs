@@ -12,7 +12,7 @@ namespace Wardrobe.Controllers
 {
     public class AccessoriesController : Controller
     {
-        private WardrobeEntities db = new WardrobeEntities();
+        private WardrobeEntities1 db = new WardrobeEntities1();
 
         // GET: Accessories
         public ActionResult Index()
@@ -50,7 +50,7 @@ namespace Wardrobe.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AccessoryID,AccessoryName,AccessoryPhoto,AccessoryType,ColorID,SeasonID,OccasionID")] Accessory accessory)
+        public ActionResult Create([Bind(Include = "AccessoryID,AccessoryName,AccessoryPhoto,AccesoryType,ColorID,SeasonID,OccasionID")] Accessory accessory)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace Wardrobe.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AccessoryID,AccessoryName,AccessoryPhoto,AccessoryType,ColorID,SeasonID,OccasionID")] Accessory accessory)
+        public ActionResult Edit([Bind(Include = "AccessoryID,AccessoryName,AccessoryPhoto,AccesoryType,ColorID,SeasonID,OccasionID")] Accessory accessory)
         {
             if (ModelState.IsValid)
             {

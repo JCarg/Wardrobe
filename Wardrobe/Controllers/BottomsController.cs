@@ -12,7 +12,7 @@ namespace Wardrobe.Controllers
 {
     public class BottomsController : Controller
     {
-        private WardrobeEntities db = new WardrobeEntities();
+        private WardrobeEntities1 db = new WardrobeEntities1();
 
         // GET: Bottoms
         public ActionResult Index()

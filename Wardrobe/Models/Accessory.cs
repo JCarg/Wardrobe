@@ -23,10 +23,10 @@ namespace Wardrobe.Models
         public int AccessoryID { get; set; }
         public string AccessoryName { get; set; }
         public string AccessoryPhoto { get; set; }
-        public string AccessoryType { get; set; }
+        public string AccesoryType { get; set; }
         public int ColorID { get; set; }
         public int SeasonID { get; set; }
-        public Nullable<int> OccasionID { get; set; }
+        public int OccasionID { get; set; }
     
         public virtual Color Color { get; set; }
         public virtual Occasion Occasion { get; set; }

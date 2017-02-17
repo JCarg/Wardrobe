@@ -190,9 +190,6 @@
     <Compile Include="Models\Sho.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>WardrobeDB.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\Top.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
@@ -282,31 +279,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Outfits\Create.cshtml" />
-    <Content Include="Views\Outfits\Delete.cshtml" />
-    <Content Include="Views\Outfits\Details.cshtml" />
-    <Content Include="Views\Outfits\Edit.cshtml" />
-    <Content Include="Views\Outfits\Index.cshtml" />
-    <Content Include="Views\Tops\Create.cshtml" />
-    <Content Include="Views\Tops\Delete.cshtml" />
-    <Content Include="Views\Tops\Details.cshtml" />
-    <Content Include="Views\Tops\Edit.cshtml" />
-    <Content Include="Views\Tops\Index.cshtml" />
-    <Content Include="Views\Bottoms\Create.cshtml" />
-    <Content Include="Views\Bottoms\Delete.cshtml" />
-    <Content Include="Views\Bottoms\Details.cshtml" />
-    <Content Include="Views\Bottoms\Edit.cshtml" />
-    <Content Include="Views\Bottoms\Index.cshtml" />
-    <Content Include="Views\Shoes\Create.cshtml" />
-    <Content Include="Views\Shoes\Delete.cshtml" />
-    <Content Include="Views\Shoes\Details.cshtml" />
-    <Content Include="Views\Shoes\Edit.cshtml" />
-    <Content Include="Views\Shoes\Index.cshtml" />
-    <Content Include="Views\Accessories\Create.cshtml" />
-    <Content Include="Views\Accessories\Delete.cshtml" />
-    <Content Include="Views\Accessories\Details.cshtml" />
-    <Content Include="Views\Accessories\Edit.cshtml" />
-    <Content Include="Views\Accessories\Index.cshtml" />
     <Content Include="Views\Colors\Create.cshtml" />
     <Content Include="Views\Colors\Delete.cshtml" />
     <Content Include="Views\Colors\Details.cshtml" />
@@ -322,6 +294,31 @@
     <Content Include="Views\Seasons\Details.cshtml" />
     <Content Include="Views\Seasons\Edit.cshtml" />
     <Content Include="Views\Seasons\Index.cshtml" />
+    <Content Include="Views\Tops\Create.cshtml" />
+    <Content Include="Views\Tops\Delete.cshtml" />
+    <Content Include="Views\Tops\Details.cshtml" />
+    <Content Include="Views\Tops\Edit.cshtml" />
+    <Content Include="Views\Tops\Index.cshtml" />
+    <Content Include="Views\Bottoms\Create.cshtml" />
+    <Content Include="Views\Bottoms\Delete.cshtml" />
+    <Content Include="Views\Bottoms\Details.cshtml" />
+    <Content Include="Views\Bottoms\Edit.cshtml" />
+    <Content Include="Views\Bottoms\Index.cshtml" />
+    <Content Include="Views\Accessories\Create.cshtml" />
+    <Content Include="Views\Accessories\Delete.cshtml" />
+    <Content Include="Views\Accessories\Details.cshtml" />
+    <Content Include="Views\Accessories\Edit.cshtml" />
+    <Content Include="Views\Accessories\Index.cshtml" />
+    <Content Include="Views\Shoes\Create.cshtml" />
+    <Content Include="Views\Shoes\Delete.cshtml" />
+    <Content Include="Views\Shoes\Details.cshtml" />
+    <Content Include="Views\Shoes\Edit.cshtml" />
+    <Content Include="Views\Shoes\Index.cshtml" />
+    <Content Include="Views\Outfits\Create.cshtml" />
+    <Content Include="Views\Outfits\Delete.cshtml" />
+    <Content Include="Views\Outfits\Details.cshtml" />
+    <Content Include="Views\Outfits\Edit.cshtml" />
+    <Content Include="Views\Outfits\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
