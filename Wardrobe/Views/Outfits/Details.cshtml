@@ -9,10 +9,42 @@
 <div>
     <h4>Outfit</h4>
     <div class="row toprow">
-        <div class="col-md-8"></div>
-        <h4>@Html.DisplayFor(model => model.Top.TopName)</h4>
-        <img src="@Html.DisplayFor(model => model.Top.TopPhoto)" />
-             <input type="button" class="btn btn-info" value="Open Sesame" onclick="location.href='@Url.Action("Details","Tops",new { id = Model.Top.TopID})'" />
+        <div class="col-md-8">          
+            <img src="@Html.DisplayFor(model => model.Top.TopPhoto)" />
+        </div>
+         <div class="col-md-4">
+             <h2>@Html.DisplayFor(model => model.Top.TopName)</h2>
+
+             <input type="button" class="btn btn-info" value="Item Details" onclick="location.href='@Url.Action("Details","Tops",new { id = Model.Top.TopID})'" />
+    </div>
+    </div>
+    <div class="row bottomrow">
+        <div class="col-md-8">
+            <img src="@Html.DisplayFor(model => model.Bottom.BottomPhoto)" />
+        </div>
+        <div class="col-md-4">
+            <h2>@Html.DisplayFor(model => model.Bottom.BottomName)</h2>
+            <input type="button" class="btn btn-info" value="Item Details" onclick="location.href='@Url.Action("Details","Bottoms",new { id = Model.Bottom.BottomID})'" />
+        </div>
+    </div>
+    <div class="row toprow">
+        <div class="col-md-8">
+            <img src="@Html.DisplayFor(model => model.Accessory.AccessoryPhoto)" />
+        </div>
+        <div class="col-md-4">
+            <h2>@Html.DisplayFor(model => model.Accessory.AccessoryName)</h2>
+
+            <input type="button" class="btn btn-info" value="Item Details" onclick="location.href='@Url.Action("Details","Accessories",new { id = Model.Accessory.AccessoryID})'" />
+        </div>
+    </div>
+    <div class="row toprow">
+        <div class="col-md-8">
+            <img src="@Html.DisplayFor(model => model.Sho.ShoePhoto)" />
+        </div>
+        <div class="col-md-4">
+            <h2>@Html.DisplayFor(model => model.Sho.ShoeName)</h2>
+            <input type="button" class="btn btn-info" value="Item Details" onclick="location.href='@Url.Action("Details","Shoes",new { id = Model.Sho.ShoeID})'" />
+        </div>
     </div>
     
     @*<hr />
