@@ -23,8 +23,18 @@ select,
 textarea {
     max-width: 280px;
 }
+/*Navbar Styling*/
 .navbar-fixed-top{
     font-family: monospace;
+}
+.navbar-nav.middle {
+  float: none;
+  text-align: center;
+}
+
+.middle li {
+  float: none;
+  display: inline-block;
 }
 /*Home Stylization start*/
 body.home{
@@ -56,4 +66,9 @@ body h2{
     color:white;
     text-align:center;
     text-decoration:underline;
+}
+a.btn-primary{
+    color:black;
+    border:1px solid black;
+    background:none;
 }
