@@ -8,40 +8,79 @@
 
     <div class="outfitdetails">
         <div class="row toprow">
-            <div class="col-md-8 image">
-                <img src="@Html.DisplayFor(model => model.Top.TopPhoto)" />
+                <div class="col-md-8 image">
+                    <img src="@Html.DisplayFor(model => model.Top.TopPhoto)" />
+                </div>
+                <div class="col-md-4 mainpages content">
+                    <h3>@Html.DisplayFor(model => model.Top.TopName)</h3>
+                    <dl class="dl-horizontal">
+                        <dt>@Html.DisplayNameFor(@model => model.Top.TopType): </dt>
+                        <dd>@Html.DisplayFor(model => model.Top.TopType)</dd>
+                        <dt>@Html.DisplayNameFor(@model => model.Top.Color.ColorName): </dt>
+                        <dd>@Html.DisplayFor(model => model.Top.Color.ColorName)</dd>
+                        <dt>@Html.DisplayNameFor(@model => model.Top.Season.SeasonName): </dt>
+                        <dd>@Html.DisplayFor(model => model.Top.Season.SeasonName)</dd>
+                        <dt>@Html.DisplayNameFor(@model => model.Top.Occasion.OccasionName): </dt>
+                        <dd>@Html.DisplayFor(model => model.Top.Occasion.OccasionName)</dd>
+                    </dl>
+                    <input type="button" class="btn btn-primary mainpages content" value="@Html.DisplayFor(model => model.Top.TopName)'s Page" onclick="location.href='@Url.Action("Details","Tops",new { id = Model.Top.TopID})'" />
+                </div>
             </div>
-            <div class="col-md-4 mainpages content">
-                <h2>@Html.DisplayFor(model => model.Top.TopName)</h2>
-                <input type="button" class="btn btn-primary mainpages" value="Item Details" onclick="location.href='@Url.Action("Details","Tops",new { id = Model.Top.TopID})'" />
-            </div>
-        </div>
         <div class="row bottomrow image">
             <div class="col-md-8">
                 <img src="@Html.DisplayFor(model => model.Bottom.BottomPhoto)" />
             </div>
             <div class="col-md-4 mainpages content">
                 <h2>@Html.DisplayFor(model => model.Bottom.BottomName)</h2>
-                <input type="button" class="btn btn-primary" value="Item Details" onclick="location.href='@Url.Action("Details","Bottoms",new { id = Model.Bottom.BottomID})'" />
+                <dl class="dl-horizontal">
+                    <dt>@Html.DisplayNameFor(@model => model.Bottom.BottomType): </dt>
+                    <dd>@Html.DisplayFor(model => model.Bottom.BottomType)</dd>
+                    <dt>@Html.DisplayNameFor(@model => model.Bottom.Color.ColorName): </dt>
+                    <dd>@Html.DisplayFor(model => model.Bottom.Color.ColorName)</dd>
+                    <dt>@Html.DisplayNameFor(@model => model.Bottom.Season.SeasonName): </dt>
+                    <dd>@Html.DisplayFor(model => model.Bottom.Season.SeasonName)</dd>
+                    <dt>@Html.DisplayNameFor(@model => model.Bottom.Occasion.OccasionName): </dt>
+                    <dd>@Html.DisplayFor(model => model.Bottom.Occasion.OccasionName)</dd>
+                </dl>
+                <input type="button" class="btn btn-primary content" value="@Html.DisplayFor(model => model.Bottom.BottomName)'s Page" onclick="location.href='@Url.Action("Details","Bottoms",new { id = Model.Bottom.BottomID})'" />
             </div>
         </div>
-        <div class="row toprow">
+        <div class="row accesoryrow">
             <div class="col-md-8 image">
                 <img src="@Html.DisplayFor(model => model.Accessory.AccessoryPhoto)" />
             </div>
             <div class="col-md-4 mainpages content">
                 <h2>@Html.DisplayFor(model => model.Accessory.AccessoryName)</h2>
-
-                <input type="button" class="btn btn-primary" value="Item Details" onclick="location.href='@Url.Action("Details","Accessories",new { id = Model.Accessory.AccessoryID})'" />
+                <dl class="dl-horizontal">
+                    <dt>@Html.DisplayNameFor(@model => model.Accessory.AccesoryType): </dt>
+                    <dd>@Html.DisplayFor(model => model.Accessory.AccesoryType)</dd>
+                    <dt>@Html.DisplayNameFor(@model => model.Accessory.Color.ColorName): </dt>
+                    <dd>@Html.DisplayFor(model => model.Accessory.Color.ColorName)</dd>
+                    <dt>@Html.DisplayNameFor(@model => model.Accessory.Season.SeasonName): </dt>
+                    <dd>@Html.DisplayFor(model => model.Accessory.Season.SeasonName)</dd>
+                    <dt>@Html.DisplayNameFor(@model => model.Accessory.Occasion.OccasionName): </dt>
+                    <dd>@Html.DisplayFor(model => model.Accessory.Occasion.OccasionName)</dd>
+                </dl>
+                <input type="button" class="btn btn-primary content" value="@Html.DisplayFor(model => model.Accessory.AccessoryName)'s Page" onclick="location.href='@Url.Action("Details","Accessories",new { id = Model.Accessory.AccessoryID})'" />
             </div>
         </div>
-        <div class="row toprow">
+        <div class="row shoerow">
             <div class="col-md-8 image">
                 <img src="@Html.DisplayFor(model => model.Sho.ShoePhoto)" />
             </div>
             <div class="col-md-4 mainpages content">
                 <h2>@Html.DisplayFor(model => model.Sho.ShoeName)</h2>
-                <input type="button" class="btn btn-primary" value="Item Details" onclick="location.href='@Url.Action("Details","Shoes",new { id = Model.Sho.ShoeID})'" />
+                <dl class="dl-horizontal">
+                    <dt>@Html.DisplayNameFor(@model => model.Sho.ShoeType): </dt>
+                    <dd>@Html.DisplayFor(model => model.Sho.ShoeType)</dd>
+                    <dt>@Html.DisplayNameFor(@model => model.Sho.Color.ColorName): </dt>
+                    <dd>@Html.DisplayFor(model => model.Sho.Color.ColorName)</dd>
+                    <dt>@Html.DisplayNameFor(@model => model.Sho.Season.SeasonName): </dt>
+                    <dd>@Html.DisplayFor(model => model.Sho.Season.SeasonName)</dd>
+                    <dt>@Html.DisplayNameFor(@model => model.Sho.Occasion.OccasionName): </dt>
+                    <dd>@Html.DisplayFor(model => model.Sho.Occasion.OccasionName)</dd>
+                </dl>
+                <input type="button" class="btn btn-primary content" value="@Html.DisplayFor(model => model.Sho.ShoeName)'s Page" onclick="location.href='@Url.Action("Details","Shoes",new { id = Model.Sho.ShoeID})'" />
             </div>
         </div>
 

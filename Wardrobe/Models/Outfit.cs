@@ -25,5 +25,6 @@ namespace Wardrobe.Models
         public virtual Bottom Bottom { get; set; }
         public virtual Sho Sho { get; set; }
         public virtual Top Top { get; set; }
+        //public virtual Color Color { get; set; }
     }
 }

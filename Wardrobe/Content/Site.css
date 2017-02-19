@@ -36,6 +36,14 @@ textarea {
   float: none;
   display: inline-block;
 }
+a.navbar.collapse {
+    border-bottom: dashed 1px;
+    padding-bottom: 7px;
+}
+button.navbar-toggle.collapsed{
+    color: #9d9d9d;
+    border-color: #9d9d9d;
+}
 /*Home Stylization start*/
 body.home{
   background-image:url(http://www.publicdomainpictures.net/pictures/20000/velka/carved-wooden-door.jpg); 
@@ -82,10 +90,23 @@ body h2{
 /*Outfit Detail Page Styling Start*/
 .image img{
     max-height:600px;
-    max-width:600px;
-    min-width:600px;
+    width:100%;
+    height:100%;
 }
 .mainpages.content{
     text-align:center;
-
+    color:white;   
 }
+dl.dl-horizontal{
+    border:solid white;
+}
+.dl-horizontal dt,dd{
+    margin-top:20px;
+    font-size:large;
+    text-align:left;
+}
+.btn-primary.content{
+    color:white;
+    border: 1px solid white;
+}
+/*Outfit Detail Page End*/
