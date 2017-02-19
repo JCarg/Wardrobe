@@ -67,8 +67,25 @@ body h2{
     text-align:center;
     text-decoration:underline;
 }
-a.btn-primary{
+.btn-primary{
     color:black;
     border:1px solid black;
     background:none;
+}
+.btn-primary:hover{
+    background-color:black;
+    color:white;
+}
+/*Main Page Styling End*/
+/*Outfit Styling*/
+
+/*Outfit Detail Page Styling Start*/
+.image img{
+    max-height:600px;
+    max-width:600px;
+    min-width:600px;
+}
+.mainpages.content{
+    text-align:center;
+
 }

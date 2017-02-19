@@ -33,6 +33,7 @@ namespace Wardrobe.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.ColorName = db.Colors;
             return View(outfit);
         }
 
