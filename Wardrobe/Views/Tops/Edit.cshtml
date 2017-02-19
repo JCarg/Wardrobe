@@ -36,8 +36,19 @@
         <div class="form-group">
             @Html.LabelFor(model => model.TopType, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.TopType, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.TopType, "", new { @class = "text-danger" })
+@Html.DropDownListFor(model => model.TopType, new SelectList(
+                  new List<Object>{
+                       new { value ="T-Shirt", text = "T-Shirt"  },
+                       new { value = "Button-up" , text = "Button-up" },
+                       new { value = "Sweater" , text = "Sweater"},
+                       new {value="Jacket",text="Jacket"},
+                       new {value="Cardigan", text="Cardigan"},
+                       new {value="Tank-top", text="Tank-top"}
+                    },
+                  "value",
+                  "text",
+                   0))
+            @Html.ValidationMessageFor(model => model.TopType, "", new { @class = "text-danger" })
             </div>
         </div>
 

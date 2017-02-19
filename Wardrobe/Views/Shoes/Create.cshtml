@@ -34,7 +34,19 @@
         <div class="form-group">
             @Html.LabelFor(model => model.ShoeType, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ShoeType, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.DropDownListFor(model => model.ShoeType, new SelectList(
+                  new List<Object>{
+                       new { value ="Heels", text = "Heels"  },
+                       new { value = "Sneakers" , text = "Sneakers" },
+                       new { value = "Loafers" , text = "Loafers"},
+                       new {value="Sandals",text="Sandals"},
+                       new {value="Boots", text="Boots"}
+                    },
+                  "value",
+                  "text",
+                   0))
+
+
                 @Html.ValidationMessageFor(model => model.ShoeType, "", new { @class = "text-danger" })
             </div>
         </div>
