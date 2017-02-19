@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;  
+    font-family:monospace;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,11 +24,11 @@ textarea {
     max-width: 280px;
 }
 .navbar-fixed-top{
-    font-family: 'Sansita', sans-serif;
+    font-family: monospace;
 }
 /*Home Stylization start*/
 body.home{
-  background-image:url(http://www.publicdomainpictures.net/pictures/20000/velka/carved-wooden-door.jpg) no-repeat center center fixed; 
+  background-image:url(http://www.publicdomainpictures.net/pictures/20000/velka/carved-wooden-door.jpg); 
  background-position:center;
  width:100%;
  height:100%;
@@ -39,4 +40,20 @@ body.home{
     background-color:rgba(0,0,0,0);
     text-align:center;
     color:antiquewhite;
+}
+/*Home End*/
+/*Main Page Styling*/
+body.mainpages{
+    background-image:url(https://static.pexels.com/photos/172292/pexels-photo-172292.jpeg);
+    background-size:contain;
+}
+div.thumbnail.mainpages{
+    border: none;
+    text-align: center;
+    background-color:none;
+}
+body h2{
+    color:white;
+    text-align:center;
+    text-decoration:underline;
 }

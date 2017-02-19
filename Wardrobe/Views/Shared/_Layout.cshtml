@@ -13,19 +13,27 @@
         <div class="row">
             <div class="navbar navbar-inverse navbar-fixed-top">
 
-                    <div class="navbar-header">
+                    <div class="navbar-header col-md-2">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
                         </button>
-                        @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                        @Html.ActionLink("Closet.", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                     </div>
-                    <div class="navbar-collapse collapse">
+                    <div class="navbar-collapse collapse col-md-8">
                         <ul class="nav navbar-nav">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Tops", "Index", "Tops")</li>
+                            <li>@Html.ActionLink("Bottoms", "Index", "Bottoms")</li>
+                            <li>@Html.ActionLink("Shoes", "Index", "Shoes")</li>
+                            <li>@Html.ActionLink("Accessories", "Index", "Accessories")</li>
+                            <li>@Html.ActionLink("Outfits", "Index", "Outfits")</li>
                         </ul>
                     </div>
+                    <div class="navbar-collapse collapse col-md-2">
+                        <div class="nav navbar-nav dropdown-menu">
+                            Create
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

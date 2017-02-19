@@ -1,16 +1,20 @@
-﻿@{
+﻿@model IEnumerable<Wardrobe.Models.Outfit>
+@{
     ViewBag.Title = "Home Page";
 }
 
-    <body class="home" background="http://www.publicdomainpictures.net/pictures/20000/velka/carved-wooden-door.jpg">
-        <div class="container backgroundimage">
-            <div class="jumbotron">
-                <h1>Welcome</h1>
-                <p class="lead">asp.net is a free web framework for building great web sites and web applications using html, css and javascript.</p>
-                <p><input type="button" class="btn btn-info" value="Open Sesame" onclick="location.href='@Url.Action("Index","Outfits")'" /></p>
-            </div>
 
-            @*<div class="row">
+    <body class="home" background="http://www.publicdomainpictures.net/pictures/20000/velka/carved-wooden-door.jpg">
+                <div class="row">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="" alt="First slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                @*<div class="row">
                 <div class="col-md-4">
                     <h2>getting started</h2>
                     <p>
@@ -31,5 +35,4 @@
                     <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?linkid=301867">learn more &raquo;</a></p>
                 </div>
             </div>*@
-        </div>
       </body>
