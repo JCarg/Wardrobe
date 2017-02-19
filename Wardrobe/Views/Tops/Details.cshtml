@@ -3,64 +3,86 @@
 @{
     ViewBag.Title = "Details";
 }
+<body class="mainpages" background="https://static.pexels.com/photos/172292/pexels-photo-172292.jpeg>">
+    <div>
+            <h2>@Html.DisplayFor(model => model.TopName)</h2>
+        </div>
+    <div class="row">
+        <div class="detailsphoto container col-md-12">
+            <img src="@Html.DisplayFor(model => model.TopPhoto)" />
+        </div>
+    </div>
+    <div class="row content">
+        <div class="container mainpages content">
+            <h2></h2>
+            <dl class="dl-horizontal">
+                <dt>@Html.DisplayNameFor(@model => model.TopType): </dt>
+                <dd>@Html.DisplayFor(model => model.TopType)</dd>
+                <dt>@Html.DisplayNameFor(@model => model.Color.ColorName): </dt>
+                <dd>@Html.DisplayFor(model => model.Color.ColorName)</dd>
+                <dt>@Html.DisplayNameFor(@model => model.Season.SeasonName): </dt>
+                <dd>@Html.DisplayFor(model => model.Season.SeasonName)</dd>
+                <dt>@Html.DisplayNameFor(@model => model.Occasion.OccasionName): </dt>
+                <dd>@Html.DisplayFor(model => model.Occasion.OccasionName)</dd>
+            </dl>
+        </div>
+    </div>
+    <div>
+        @*<h4>Top</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.TopName)
+            </dt>
 
-<h2>Details</h2>
+            <dd>
+                @Html.DisplayFor(model => model.TopName)
+            </dd>
 
-<div>
-    <h4>Top</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.TopName)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.TopPhoto)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopName)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.TopPhoto)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopPhoto)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.TopType)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopPhoto)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.TopType)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopType)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Color.ColorName)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopType)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Color.ColorName)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Color.ColorName)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Occasion.OccasionName)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Color.ColorName)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Occasion.OccasionName)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion.OccasionName)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Season.SeasonName)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Occasion.OccasionName)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Season.SeasonName)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Season.SeasonName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season.SeasonName)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+        </dl>*@
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+    </body>
