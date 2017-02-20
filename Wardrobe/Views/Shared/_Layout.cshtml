@@ -21,13 +21,13 @@
                     <div class="collapse navbar-collapse" id=".navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
-                                <a href="#nav-collapse4" class="dropdown collapsed" data-toggle="dropdown" aria-expanded="false" aria-controls=".navbar-collapse">Enhance Wardrobe</a>
+                                <a href="#nav-collapse4" class="dropdown collapsed" data-toggle="dropdown" aria-expanded="false" aria-controls=".navbar-collapse">Enhance Collection </a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li>@Html.ActionLink("Top", "Create", "Tops")</li>
-                                    <li>@Html.ActionLink("Bottom", "Create", "Bottoms")</li>
+                                    <li>@Html.ActionLink("Tops", "Create", "Tops")</li>
+                                    <li>@Html.ActionLink("Bottoms", "Create", "Bottoms")</li>
                                     <li>@Html.ActionLink("Shoes", "Create", "Shoes")</li>
-                                    <li>@Html.ActionLink("Accessory", "Create", "Accessories")</li>
-                                    <li>@Html.ActionLink("Outfit", "Create", "Outfits")</li>
+                                    <li>@Html.ActionLink("Accessories", "Create", "Accessories")</li>
+                                    <li>@Html.ActionLink("Outfits", "Create", "Outfits")</li>
                                 </ul>
                             </li>
                         </ul>
@@ -48,10 +48,9 @@
 
     <div class="container body-content">
         @RenderBody()
-        @*<hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>*@
+            <footer class="navbar-fixed-bottom">
+                <p>&copy; @DateTime.Now.Year - Your Closet</p>
+            </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

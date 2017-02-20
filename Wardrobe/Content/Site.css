@@ -44,6 +44,9 @@ button.navbar-toggle.collapsed{
     color: #9d9d9d;
     border-color: #9d9d9d;
 }
+footer{
+    background-color: rgba(0, 0, 0, 0.29);
+}
 /*Home Stylization start*/
 body.home{
   background-image:url(http://www.publicdomainpictures.net/pictures/20000/velka/carved-wooden-door.jpg); 
@@ -52,6 +55,7 @@ body.home{
  height:100%;
  background-repeat:no-repeat no-repeat;
  background-size:auto;
+ margin-top:15%;
 }
 
 .jumbotron{
@@ -87,7 +91,7 @@ body h2{
 /*Main Page Styling End*/
 /*Detail page styling for individual items*/
 .detailsphoto.container{
-    text-align:center;
+    float:none;
 }
 .detailsphoto.container img{
     width:100%;
@@ -97,10 +101,27 @@ body h2{
 .body p{
     color:white;
 }
-.buttons p a{
+div p,a{
     color:white;
 }
+div.row.text-center {
+    float:none;
+ }
+div.container.mainpages.content{
+    float:none;
+}
+/*End*/
+/*Create Page Styling*/
+label.control-label.col-md-2{
+color:white;
 
+}
+label.control-label.col-md-2.photolabel{
+    padding-top:38px;
+}
+h2.createheader{
+    text-align:left;
+}
 /*Outfit Styling*/
 
 /*Outfit Detail Page Styling Start*/

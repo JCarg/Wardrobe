@@ -7,7 +7,7 @@
     <h2>Bottoms</h2>
 
     <p>
-        @Html.ActionLink("Create New", "Create")
+        @Html.ActionLink("Add item", "Create")
     </p>
     <div class="row">
         @foreach (var item in Model)
@@ -21,10 +21,6 @@
                                 <img src="@Html.DisplayFor(modelItem=>item.BottomPhoto)" style="width:100%; height:100%;" />
                             </div>
                         </div>
-                        @*<p>@Html.DisplayFor(modelItem => item.Summary)</p>
-                            <h5>
-                                @Html.DisplayFor(modelItem => item.Category.Name)
-                            </h5>*@
                         @Html.ActionLink("Details", "Details", new { id = item.BottomID }, new { @class = "btn btn-primary", role = "button" })
          
                     </div>

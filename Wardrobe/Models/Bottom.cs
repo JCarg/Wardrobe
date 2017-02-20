@@ -20,7 +20,8 @@ namespace Wardrobe.Models
         {
             this.Outfits = new HashSet<Outfit>();
         }
-    
+
+        [Display(Name = "Bottom")]
         public int BottomID { get; set; }
         [Display(Name = "Name")]
         public string BottomName { get; set; }
