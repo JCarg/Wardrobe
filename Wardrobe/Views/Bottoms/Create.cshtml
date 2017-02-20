@@ -33,7 +33,7 @@
 
             <div class="form-group">
                 @Html.LabelFor(model => model.BottomType, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+                <div class="col-md-10">@*Adds Dropdown Menu*@
                     @Html.DropDownListFor(model => model.BottomType, new SelectList(
                   new List<Object>{
                        new { value ="Jeans", text = "Jeans"  },

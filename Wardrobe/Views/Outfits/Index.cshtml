@@ -7,11 +7,11 @@
 <h2>Index</h2>
 <body class="mainpages" background="https://static.pexels.com/photos/172292/pexels-photo-172292.jpeg>">
     <p>
-        @Html.ActionLink("Create New", "Create")
+        @Html.ActionLink("Add Outfit", "Create")
     </p>
 
     <div class="row">
-        @foreach (var item in Model)
+        @foreach (var item in Model)//Creates a thumbnail with images from all item types
         {
             <div class="col-md-3">
                 <div class="thumbnail mainpages">
